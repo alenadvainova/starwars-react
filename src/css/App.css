@@ -1,0 +1,130 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #404244;
+}
+
+.App {
+  position: relative;
+  padding-left: 12rem;
+  text-align: center;
+  /* margin: 0 auto; */
+}
+
+.Sidebar {
+  width: 12rem;
+  height: 100vh;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  border-right: 3px solid #ccc;
+}
+
+.NavigationItems {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 35px;
+}
+
+.NavigationItem {
+  margin: 10px 0;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+.NavigationItem a {
+  color: #404244;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.active {
+  color: rgba(75, 192, 192, 1);
+  font-weight: bold;
+}
+
+h2 {
+  margin: 1rem;
+  border-bottom: 3px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+.planets {
+  height: 100%;
+  margin: 1rem;
+}
+.planets-barchart {
+  height: 100%;
+  margin: 1rem;
+}
+
+.planets-barchart canvas {
+  height: 50vh;
+}
+
+.planets-table table {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.planets-table table tbody {
+  width: 100%;
+}
+
+.planets-table table tr {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
+}
+
+.planets-table table th,
+.planets-table table td {
+  padding: 0.5rem 1rem;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 0;
+}
+
+.pagination a {
+  cursor: default;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #404244;
+  color: #404244;
+  margin-left: 5px;
+}
+
+.pagination li:not(.disabled) a:hover {
+  background-color: rgb(143, 197, 197);
+  cursor: pointer;
+}
+
+.pagination li a {
+  font-weight: bold;
+}
+
+.pagination li.active a {
+  color: #fff;
+  background: #404244;
+}
+
+.pagination li.disabled a {
+  pointer-events: none;
+  color: rgb(198, 197, 202);
+  border: 1px solid rgb(198, 197, 202);
+}
